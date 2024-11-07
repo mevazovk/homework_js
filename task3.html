@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание3</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="task1.html">Регистрация</a></li>
+            <li><a href="task2.html">Калькулятор</a></li>
+            <li><a href="task3.html">Галерея</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>Задание3</h1>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Image 1" onclick="openModal(this)">
+        <img src="image2.jpg" alt="Image 2" onclick="openModal(this)">
+        <img src="image3.jpg" alt="Image 3" onclick="openModal(this)">
+    </div>
+
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+
+    <script src="task3.js"></script>
+</body>
+</html>
